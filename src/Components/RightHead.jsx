@@ -1,14 +1,14 @@
-import { useContext } from "react";
-import SidebarContext from './Sidebar';
 
 import { BsFileRichtextFill } from "react-icons/bs";
+import { useSidebarContext } from "../utils/SidebarProvider";
 
 const RightHead = () => {
-    const { expanded } = useContext(SidebarContext);
-    console.log(expanded);
+    const { extended } = useSidebarContext();
+
     return (
 
-        <div className="h-36 max-w-full flex items-center  p-2 px-4 bg-[url('src/images/blur-background.jpg')]  ">
+        <div className={` h-36 w-full flex items-center justify-between  p-2 px-8 `}
+        style={{ backgroundImage: "url('/src/images/blur-background.jpg')" }}>
             <div className="flex items-center justify-center gap-5">
                 <div className="w-24 h-24 rounded-full border-solid border-[3px] border-white overflow-hidden">
                     <img className="w-full h-full" src="src/images/port.jpg" alt="port" />

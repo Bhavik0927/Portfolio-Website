@@ -5,7 +5,7 @@ import OtherTech from "./OtherTech";
 
 const RightMenu = () => {
   return (
-    <div className="w-4/5 h-full ">
+    <div className="ml-16 bg-[rgb(20,19,26)]">
         <RightHead />
         <ProjectSction />
         <StackContainer />

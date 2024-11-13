@@ -2,7 +2,6 @@
 const ProjectCards = ({ data }) => {
 
     const { name, image, link, tech } = data;
-    console.log(typeof(tech));
 
     return (
         <div className="w-52 h-72 bg-white border border-gray-200 rounded-lg shadow overflow-hidden">
