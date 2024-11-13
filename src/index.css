@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans;
+}
+button:nth-child(3){
+    @apply border-indigo-700;
+}
+button:nth-child(4){
+    @apply border-red-600;
+}
+button:nth-child(5){
+    @apply border-amber-500;
+}
