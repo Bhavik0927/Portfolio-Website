@@ -1,23 +1,29 @@
 let projects = [
     {
         id: "4",
-        name: "Job Portal ",
+        name: "Job Portal",
         image: "https://rgitech.weebly.com/uploads/1/0/1/4/101493456/published/job-portal-software-script_1.png?1491821976",
         tech: ["React", "Express", "MongoDB", 'Node'],
-        link: "https://find-job-2-drpq.onrender.com/"
+        link: "https://find-job-2-drpq.onrender.com/",
+        description: " The platform offers a seamless way to explore and apply for the latest job openings across various industries. It caters to professionals at all career levels, providing tools to enhance their job search and connect them with the right opportunities.",
+        images:[
+            "https://i.postimg.cc/4y41CC3k/job1.png",
+            "https://i.postimg.cc/8P9L4fLV/job3.png",
+            
+        ]
     },
     {
         id: "1",
         name: "TMDB Website ",
         image: "https://play-lh.googleusercontent.com/XXqfqs9irPSjphsMPcC-c6Q4-FY5cd8klw4IdI2lof_Ie-yXaFirqbNDzK2kJ808WXJk",
-        tech: ["React"],
+        tech: ["React",'Bootstrap'],
         link: "https://tmdbcinema.netlify.app/"
     },
     {
         id: "3",
         name: "Food Order Application",
         image: "https://static.vecteezy.com/system/resources/previews/026/760/015/non_2x/crunchy-bites-logo-with-a-combination-of-a-burger-and-a-milkshake-great-for-restaurant-cafe-etc-vector.jpg",
-        tech: ["React"],
+        tech: ["React",'Redux','tailwind'],
         link: "https://crunchy-bites-mu-wheat.vercel.app/"
     },
     {

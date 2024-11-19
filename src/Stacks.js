@@ -2,7 +2,7 @@ const Stacks = [
     {
         id: "1",
         heading: "Frontend",
-        tech: ['HTML','CSS', 'Tailwind', 'Javascript', 'React.js']
+        tech: ['HTML','CSS','Tailwind', 'Javascript', 'React.js',"Redux"]
     },
     {
         id: "2",
