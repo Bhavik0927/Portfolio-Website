@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCards = ({ data }) => {
 
-    const { name, image, link, tech,id } = data;
+    const { name, image, link, tech,id, photo } = data;
 
     return (
         <div className="w-52 h-72 relative bg-white border border-gray-200 rounded-lg shadow overflow-hidden z-10">

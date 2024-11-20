@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 const ProjectDetails = () => {
   const location = useLocation();
   const { data } = location.state || {};
-  console.log(data);
 
   return (
     <div className="max-w-5xl mx-auto p-6">
@@ -20,15 +19,23 @@ const ProjectDetails = () => {
 
       <div className="mb-10">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Project Photos</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {data?.images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Project Photo ${index + 1}`}
-              className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-            />
-          ))}
+        <div >
+          <div >
+            {data?.images?.map((image, index) => (
+              <div key={index} className=" flex  rounded-lg shadow-lg gap-2 p-3 my-2">
+                <img
+                  src={image?.url}
+                  alt={`Project Photo ${index + 1}`}
+                  className=" w-[500px] h-[250px] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                />
+                {
+                  image?.description ? <p className=" mt-5 text-base font-semibold  ">{image?.description}</p> : " "
+                }
+                
+              </div>
+            ))}
+          </div>
+
         </div>
       </div>
 
@@ -50,5 +57,5 @@ const ProjectDetails = () => {
   )
 }
 
-{/* */ }
+{/*  */ }
 export default ProjectDetails;
